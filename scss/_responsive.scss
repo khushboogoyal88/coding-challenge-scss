@@ -1,0 +1,50 @@
+@media (max-width: 400px) {
+  // .hide-sm {
+  //   display: none;
+  // }
+
+  // .container {
+  //   margin-top: 8rem;
+  // }
+
+  
+  // // Navbar
+  // .navbar {
+  //   display: block;
+  //   text-align: center;
+
+  //   ul {
+  //     text-align: center;
+  //     justify-content: center;
+  //   }
+
+  //   h1 {
+  //     margin-bottom: 1rem;
+  //   }
+  // }
+
+  .nav{
+    position: relative;
+    width: 100% !important;
+  
+    
+.menu-btn{
+  display: block;
+}
+  .menu-nav{
+      display: grid ;
+      grid-template-columns: auto !important;
+      margin: 0 !important;
+      background: $primary-color;
+      width: 100vw !important;
+      position: absolute;
+      top: 60px;
+      opacity: 0;
+      z-index: 99;
+
+      &.open {
+      opacity: 1;
+    }
+    }
+}
+}
