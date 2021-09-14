@@ -1,9 +1,10 @@
 
-
+// styling for logo, hamburger menu and nav items
+// Menu-btn class has the styling to create hamburger menu using before and after pseudo classes
 .menu-btn {
     display: none;
   position: absolute;
-  left: 12rem;
+  right: 10%;
   top: 1rem;
   height: 20px;
   width: 28px;
@@ -53,36 +54,31 @@
     }
   }
 }
+
+// The content of nav bar are placed using display flex.
 .nav-container {
     width: 100%;
     background-color: $primary-color;
 
     .nav{
-        display: grid;
-        grid-template-columns: .5fr auto 1fr;
-        grid-template-areas: "logo menu-btn  menu-nav";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         height: 60px;
-        width: 90%;
+        width: 95%;
         max-width: 1720px;
         margin: 0 auto;
         
         .logo{
             margin-left: 10px;
-            grid-area: logo;
         }
-
-        .menu-btn{
-            grid-area: menu-btn;
-        }
+        
         .menu-nav {
-        grid-area: menu-nav;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
+          display: flex;
+          flex-direction: row;
         list-style: none;
         text-align: center;
-        justify-self: end;
-        width: 70%;
         
         &__link {
       display: inline-block;
