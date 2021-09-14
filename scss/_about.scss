@@ -1,0 +1,50 @@
+// About Sections
+.about {
+
+
+    &__container{
+        max-width: 600px;
+        margin: 1rem auto;
+    }
+    &__item {
+        margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: .5rem;
+
+      
+
+      ul {
+        list-style: none;
+        padding: 5rem 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $light-color;
+        box-shadow: 0 3px 5px rgba($light-color, 1);
+        border-radius: 2px;
+        padding: 0.5rem;
+
+        li{
+            margin: .25rem 0;
+            font-size: 0.7rem;
+            color: $dark-color;
+        }
+  
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.5rem;
+      }
+    }
+
+
+    .about__item{
+        :nth-child(2) ul{
+            transform: scale(1.2);
+            background-color: $white;
+        }
+    }
+}

@@ -1,28 +1,11 @@
-@media (max-width: 400px) {
-  // .hide-sm {
-  //   display: none;
-  // }
+@media (max-width: 680px){
+.menu-nav{
+  width: 50%
+}
+}
 
-  // .container {
-  //   margin-top: 8rem;
-  // }
-
+@media (max-width: 480px) {
   
-  // // Navbar
-  // .navbar {
-  //   display: block;
-  //   text-align: center;
-
-  //   ul {
-  //     text-align: center;
-  //     justify-content: center;
-  //   }
-
-  //   h1 {
-  //     margin-bottom: 1rem;
-  //   }
-  // }
-
   .nav{
     position: relative;
     width: 100% !important;
@@ -47,4 +30,13 @@
     }
     }
 }
+
+ .about
+  {
+
+    &__item{
+      grid-template-columns: 1fr !important;
+    }
+    
+  }
 }
